@@ -7,7 +7,7 @@ subject = "Check THIS out"
 sender_password = input(f'Please, enter the password for {sender_email}:\n')
 
 try: 
-  yag = yagmail.SMTP(user='smtpforletslearnabout@gmail.com', password=sender_password)
+  yag = yagmail.SMTP(user=sender_email, password=sender_password)
 
   contents = [
     "This is the first paragraph in our email",
